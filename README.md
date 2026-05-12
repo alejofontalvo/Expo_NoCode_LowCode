@@ -1,50 +1,178 @@
-# Welcome to your Expo app 👋
+# FinanceApp
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+FinanceApp es una aplicación móvil desarrollada con **React Native**, **Expo** y **TypeScript**, orientada al registro y visualización de ingresos, gastos, metas financieras y resumen del estado financiero diario del usuario.
 
-## Get started
+El proyecto fue construido como una solución demostrativa para presentar una experiencia sencilla, moderna y visual de administración financiera personal desde dispositivos móviles.
 
-1. Install dependencies
+## Presentación del proyecto
 
-   ```bash
-   npm install
-   ```
+Las diapositivas de presentación del proyecto se encuentran disponibles en el siguiente enlace:
 
-2. Start the app
+[Ver diapositivas en Google Drive](https://drive.google.com/file/d/1v0gCvu1Qsa9axlc7HDEmvC-GtvQu33Iv/view?usp=sharing)
 
-   ```bash
-   npx expo start
-   ```
+## Funcionalidades principales
 
-In the output, you'll find options to open the app in a
+- Registro de ingresos y gastos.
+- Clasificación de transacciones por categorías.
+- Visualización del ingreso diario, gasto diario y saldo disponible.
+- Indicador visual del porcentaje disponible del ingreso.
+- Resumen de gastos por categoría.
+- Sección de metas financieras.
+- Pantalla de ajustes de usuario.
+- Navegación inferior entre secciones principales.
+- Modal interactivo para agregar nuevas transacciones.
+- Interfaz moderna con tema oscuro, tarjetas, barras de progreso y elementos visuales.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Tecnologías utilizadas
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **React Native**
+- **Expo**
+- **Expo Router**
+- **TypeScript**
+- **React Navigation**
+- **React Native Reanimated**
+- **Expo Vector Icons**
 
-## Get a fresh project
-
-When you're ready, run:
+## Estructura general del proyecto
 
 ```bash
-npm run reset-project
+FinanceApp/
+├── app/
+│   ├── (tabs)/
+│   │   ├── index.tsx
+│   │   ├── explore.tsx
+│   │   └── _layout.tsx
+│   ├── _layout.tsx
+│   └── modal.tsx
+├── components/
+├── constants/
+├── hooks/
+├── scripts/
+├── app.json
+├── package.json
+├── tsconfig.json
+└── README.md
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Descripción de pantallas
 
-## Learn more
+### Inicio
 
-To learn more about developing your project with Expo, look at the following resources:
+Muestra el resumen financiero del día, incluyendo ingresos, gastos, saldo disponible, porcentaje utilizado del ingreso y transacciones recientes.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Resumen
 
-## Join the community
+Permite visualizar los gastos agrupados por categoría mediante barras de progreso, facilitando el análisis del comportamiento financiero del usuario.
 
-Join our community of developers creating universal apps.
+### Metas
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Presenta metas financieras predeterminadas con valores ahorrados, objetivos y porcentaje de avance.
+
+### Ajustes
+
+Incluye opciones visuales relacionadas con perfil, notificaciones, moneda, tema, seguridad y exportación de datos.
+
+## Requisitos previos
+
+Antes de ejecutar el proyecto, asegúrate de tener instalado:
+
+- Node.js
+- npm
+- Expo CLI o usar Expo mediante `npx`
+- Expo Go en el celular, si deseas probarlo desde un dispositivo físico
+
+## Instalación
+
+Clona el repositorio:
+
+```bash
+git clone https://github.com/alejofontalvo/Expo_NoCode_LowCode.git
+```
+
+Ingresa a la carpeta del proyecto:
+
+```bash
+cd Expo_NoCode_LowCode
+```
+
+Instala las dependencias:
+
+```bash
+npm install
+```
+
+## Ejecución del proyecto
+
+Para iniciar el servidor de desarrollo de Expo:
+
+```bash
+npm start
+```
+
+o también:
+
+```bash
+npx expo start
+```
+
+Luego puedes abrir la aplicación en:
+
+- Expo Go escaneando el código QR.
+- Emulador Android.
+- Simulador iOS.
+- Navegador web.
+
+## Comandos disponibles
+
+```bash
+npm start
+```
+
+Inicia el proyecto con Expo.
+
+```bash
+npm run android
+```
+
+Ejecuta el proyecto en un emulador o dispositivo Android.
+
+```bash
+npm run ios
+```
+
+Ejecuta el proyecto en un simulador o dispositivo iOS.
+
+```bash
+npm run web
+```
+
+Ejecuta el proyecto en navegador web.
+
+```bash
+npm run lint
+```
+
+Ejecuta la revisión de código con Expo Lint.
+
+## Estado actual del proyecto
+
+El proyecto se encuentra en una versión inicial funcional. Actualmente permite registrar transacciones durante la sesión de uso y visualizar información financiera básica. Los datos se manejan de manera local en el estado de la aplicación.
+
+## Posibles mejoras futuras
+
+- Persistencia de datos con almacenamiento local o base de datos.
+- Inicio de sesión y perfiles de usuario.
+- Exportación real de reportes en CSV o PDF.
+- Gráficas financieras más avanzadas.
+- Personalización de moneda.
+- Integración con servicios financieros externos.
+- Notificaciones y recordatorios de gastos o metas.
+
+## Autor
+
+Proyecto desarrollado por **Alejandro Fontalvo**.
+
+## Licencia
+
+Este proyecto se presenta con fines académicos, demostrativos y de aprendizaje.
+
