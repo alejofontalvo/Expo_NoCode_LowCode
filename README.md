@@ -9,6 +9,8 @@ El proyecto fue construido como una solución demostrativa para presentar una ex
 Las diapositivas de presentación del proyecto se encuentran disponibles en el siguiente enlace:
 
 [Ver diapositivas en Google Drive](https://drive.google.com/file/d/1v0gCvu1Qsa9axlc7HDEmvC-GtvQu33Iv/view?usp=sharing)
+https://atoms.dev/es/share/d59138fc2609486db39d94d8d8370ca8/v1
+
 
 ## Funcionalidades principales
 
