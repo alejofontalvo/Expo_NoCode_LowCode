@@ -170,7 +170,7 @@ El proyecto se encuentra en una versión inicial funcional. Actualmente permite 
 
 ## Autor
 
-Proyecto desarrollado por **Alejandro Fontalvo**.
+Proyecto desarrollado por **Alejandro Fontalvo y Sibeli Rodriguez**.
 
 ## Licencia
 
